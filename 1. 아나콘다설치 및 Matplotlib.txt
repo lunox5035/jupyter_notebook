@@ -1,0 +1,110 @@
+배종혁
+jonghyeok.vae@gmail.com
+
+머신러닝
+딥러닝
+
+터미널 콘다연결
+1. Set-ExecutionPolicy RemoteSigned		:관리자권한으로 실행
+
+2. conda init powershell			:콘다 파워셀 입력
+
+conda config --set auto_activate_base False	:첫화면 콘다 해제
+
+conda activate				:콘다 실행
+
+---콘다 명령어---
+conda env list : 현재 환경 리스트
+
+conda create -n ml-env python=3.8 : 파이썬 3.8버전으로 가상 환경구축
+
+conda activate ml-env : 환경 이동(실행)
+
+conda install 이름 : 설치
+	numpy
+	pandas
+	matplotlib
+	jupyter	
+conda list : 설치된 리스트
+
+드라이버 파티션 분리
+
+새로운 파티션에서 jupyter notebook 실행
+
+커맨드모드
+a : (현재위치기준) 위에 셀 생성
+b : (현재위치기준) 아래 셀 생성
+dd : 셀 삭제
+c : 셀 복사
+v : (현재위치기준) 아래 붙여넣기
+shift+v : (현재위치기준) 위에 붙여넣기
+
+cell
+run all above : (현재위치기준)  위에 셀 전체 실행
+run all bellow : (현재위치기준) 아래 셀 전체 실행
+
+kernel
+
+
+- List comprehension 방법
+리스트 생성시 배열안에 조건을 입력함
+기존보다 빠르다.(왜?)
+
+ex)
+list = []
+for i in range(10):
+    list .append(i)
+print(list )
+-----------------------------
+ list = [ i for in range(10)]
+print(list)
+
+-element-wise operation 
+    값끼리 실제 계산
+
+a1 = np.arange(1, 6)
+	
+print(a1.sum())	:전체 합
+print(a1.mean())	:평균
+print(a1.std())	:
+print(a1.var())	:
+print(a1.min())	:최솟값
+print(a1.max())	:최댓값
+print(a1.cumsum())	:누적 덧셈
+print(a1.cumprod())	:누적 곱셈
+
+
+pandas
+
+Series : 1차원 배열
+	index	 values
+	0	값
+	1	값
+	2	값
+
+pd.DataFrame: 2차원 배열
+		columns
+	index	A	B	C
+	0	1	2	3
+	1	4	5	6
+	2	7	8	9
+
+
+
+==============================================
+Matplotlib
+
+속성
+plt.plot
+    (x,y,'>--r') #=마크,선모양,선색깔 / 순서없음 기호 중 겹치는 것 없음
+plt.legend 범례 설정
+    (['이름','이름'],loc=)
+
+plt.xlabel('X축 이름')
+plt.ylabel('Y축 이름')
+
+plt.title('제목')
+
+plt.grid(True) :격자선(on/off)
+
+
