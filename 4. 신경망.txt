@@ -1,0 +1,67 @@
+Activation Function :활성화 함수
+    1. Sigmoid(시크모이드): 값(y)이 0~1사이 위치
+	도함수 : y'=(1-y)y
+
+    2.tanh(하이퍼볼릭 탄젠트): 값(y)이 -1~1사이 위치
+
+    3. ReLU(Rectified Linear Unit) : 음수=0 양수(x)
+
+    4. Leaky ReLU: 약간의 기울기를 가진 음수
+
+    5. Softmax: 입력 값>[0~1] 정규화, 출력값의 총합=1
+
+
+
+덴도라이트=가지돌기
+엑손=축삭돌기
+시넵스
+
+Perceptron(퍼셉트론):
+
+
+초기 가중치와 bias 랜덤생성
+
+
+
+다중 신경망
+    Fullu Connected Layer
+    Fullu Connected Network
+
+	입력값 :X
+	뉴런(노드) :Y
+	레이어(행렬):[X,Y]
+	bias수 : Y
+
+	입력레이어->히든레이어
+	 :   X		Y
+	히든레이어->출력레이어
+	 :   X		Y
+
+분류
+	
+
+역전파: 출력값과 정답의 오차를 가중치와 bias를 최적화시킴
+
+인공지능 모델: 최적화 모델을 만들면 레이어, 고정
+
+샘플: 입력값과 정답 한 쌍
+회귀문제의 결과값은 1개이다.
+
+one- hot encodig: 클레스의 수만큼 차원 관리
+정답 :1, 나머지 모두 0
+
+손실함수(loss function) : 출력값과 정답의 오차를 정의하는 함수
+
+    평균제곱오차 - MSE(Mean squared error)
+
+    오차제곱합 ­ SSE(Sum of Squares for Error)
+
+    교차 엔트로피(Cross Entropy)
+	x(정답)에 가까워질수록(커질수록) 오차(y)가 작아진다.
+
+경사하강법: 가중치의 최소 오차를 구하는 방법?
+	편미분 계산반복 (양수-> 감소, 음수->증가)
+		로컬미니멈
+	η: 학습율
+
+

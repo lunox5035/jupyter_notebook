@@ -1,0 +1,21 @@
+행렬 : 
+
+미분 
+y=ax+m
+y'=a
+dy/dx=
+
+y=ax^n+m
+
+y'=(a*nx^n-1)+(0*mx^0-1)
+
+y=u(g(x))
+y'=u'*g'
+
+y=ax^n+bt^m+cz^l+k
+dy/
+    도함수
+    
+
+
+
