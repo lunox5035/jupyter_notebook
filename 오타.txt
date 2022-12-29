@@ -1,0 +1,51 @@
+활성화 함수
+activation:
+    relu
+    sigmoid
+    LeakyReLU
+
+    softmax 
+    
+    
+Embedding
+Dropout
+Conv1D
+MaxPool1D
+LSTM
+Dense
+Flatten
+UpSampling2D
+
+
+loss:
+    binary_crossentropy
+    categorical_crossentropy
+
+optimizer
+
+metrics=['accuracy']
+
+import:
+    import numpy as np
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    
+    from tensorflow.keras import models, layers
+    from tensorflow.keras.utils import to_categorical
+    from tensorflow.keras.preprocessing import sequence
+    from tensorflow.keras.preprocessing.sequence import pad_sequences
+    from tensorflow.keras.datasets import reuters, mnist
+    from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+    from tensorflow.keras.preprocessing.sequence import pad_sequences
+    
+    import os
+os.environ["KMP_DUPLICATE_LIB_OK"]='1'
+    
+    
+    
+    
+    
+    
+print('Test Accuracy: %.4f' %(model.evaluate(X_test, y_test)[1]))
+    
